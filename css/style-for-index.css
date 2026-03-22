@@ -1,0 +1,428 @@
+html {
+    margin: 0;
+}
+
+body {
+    font-family: "Google Sans";
+    margin: 0;
+}
+
+em {
+    color: #4d7bc9;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    to {
+        transform: translateY(0px);
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    header {
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-color: #111827;
+    }
+
+    .avatar-container {
+        width: 1rem;
+        height: 1rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background-color: white;
+        background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1774211166/ChatGPT_Image_Mar_18_2026_02_44_22_AM_smu1j8-removebg-preview_m0seoh.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .actions-wrapper {
+        width: auto;
+        height: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.7rem;
+    }
+
+    .actions-wrapper div {
+        color: white;
+        font-weight: bold;
+        font-size: 0.55rem;
+        transition: transform 0.3s ease-in;
+    }
+
+    .actions-wrapper div:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .socials-wrapper {
+        width: auto;
+        height: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .socials-wrapper i {
+        font-size: 0.55rem;
+        color: white;
+    }
+
+    .socials-wrapper #x {
+        font-size: 0.5rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 60vh;
+        padding-top: 1.5rem;
+        transform: translateY(50px);
+        animation: fadeIn 1s forwards;
+    }
+
+    .content {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1774203795/ChatGPT_Image_Mar_22_2026_07_22_45_PM_grkxb2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 11%;
+    }
+
+    .decoration-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+        padding: 2rem;
+        position: relative;
+        color: white;
+        max-width: 60%;
+        margin-top: -1%;
+    }
+
+    .text h1 {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .text p {
+        font-size: 0.6rem;
+    }
+
+    .my-photo-bg-holder {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 6rem;
+        margin-top: -10%;
+    }
+
+    .my-photo-bg {
+        width: 6rem;
+        height: 6rem;
+        display: grid;
+        place-items: center;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+        background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1773807307/WhatsApp_Image_2026-03-18_at_5.08.00_AM-removebg-preview_ifamzo.png");
+        background-size: cover;
+    }
+
+    .my-photo {
+        display: none;
+    }
+
+    .cta {
+        position: absolute;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 40%;
+        gap: 5%;
+        justify-content: center;
+    }
+
+    .cta input {
+        padding: 0.25rem;
+        padding-left: 10px;
+        border: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        font-size: 0.55rem;
+        width: 70%;
+        height: 21%;
+        transition: border-color 0.5s ease-in;
+    }
+
+    .cta input:focus {
+        border: 1px solid;
+        border-color: #2626ff;
+    }
+
+    .cta button {
+        width: 40%;
+        height: 32%;
+        font-size: 0.5rem;
+        font-weight: bold;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border: none;
+        background-color: #243b6b;
+        color: white;
+        transition: background-color 0.3s ease-in;
+    }
+
+    .cta button:hover {
+        background-color: #506289;
+    }
+
+    footer {
+        background-color: #111827;
+        padding: 2rem;
+        margin-top: 40%;
+    }
+
+    footer p {
+        font-size: 0.55rem;
+        align-items: center;
+        color: white;
+    }
+
+    footer span {
+        display: block;
+        padding-top: 1rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    header {
+        position: fixed;
+        z-index: 1000;
+        margin-top: -25%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        padding-top: 2%; 
+        padding-bottom: 2%;
+        background-color: #111827;
+    }
+
+    .avatar-container {
+        width: 2rem;
+        height: 2rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background-color: white;
+        background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1774211166/ChatGPT_Image_Mar_18_2026_02_44_22_AM_smu1j8-removebg-preview_m0seoh.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .actions-wrapper {
+        width: auto;
+        height: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    .actions-wrapper div {
+        color: white;
+        font-weight: bold;
+        font-size: 0.8rem;
+        transition: transform 0.3s ease-in;
+    }
+
+    .actions-wrapper div:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .socials-wrapper {
+        width: auto;
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .socials-wrapper i {
+        font-size: 0.8rem;
+        color: white;
+        transition: transform 0.5s ease-in;
+    }
+
+    .socials-wrapper i:hover {
+        transform: scale(1.2);
+    }
+
+    .socials-wrapper #x {
+        font-size: 0.75rem;
+    }
+
+    main {
+        transform: translateY(50px);
+        animation: fadeIn 1s forwards;
+    }
+
+    .content {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1773905596/ChatGPT_Image_Mar_19_2026_08_32_29_AM_ydtsr9.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 25%;
+    }
+
+    .decoration-wrapper {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+        position: relative;
+        padding: 2rem;
+        color: white;
+        max-width: 30rem;
+        margin-top: -1%;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    .my-photo-bg-holder {
+        position: relative;
+        width: 13rem;
+        height: 13rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 6rem;
+        margin-top: -20rem;
+    }
+
+    .my-photo-bg {
+        width: 100%;
+        height: auto;
+        display: grid;
+        place-items: center;
+        background: #d9d9d9;
+        border-radius: 50%;
+        background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1773807307/WhatsApp_Image_2026-03-18_at_5.08.00_AM-removebg-preview_ifamzo.png");
+        background-size: cover;
+    }
+
+    .my-photo {
+        display: none;
+    }
+
+    .cta {
+        position: absolute;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 30%;
+        gap: 5%;
+    }
+
+    .cta input {
+        position: relative;
+        padding: 0.25rem;
+        padding-left: 10px;
+        border: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        font-size: 0.7rem;
+        width: 70%;
+        height: 35%;
+        outline: none;
+        transition: border-color 0.5s ease-in;
+    }
+
+    .cta input:focus {
+        border: 2px solid;
+        border-color: #2626ff;
+    }
+
+    .cta button {
+        position: relative;
+        width: 25%;
+        height: 45%;
+        font-size: 0.7rem;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border: none;
+        background-color: #243b6b;
+        color: white;
+        transition: background-color 0.3s ease-in;
+        font-weight: bold;
+    }
+
+    .cta button:hover {
+        background-color: #506289;
+    }
+
+    footer {
+        background-color: #111827;
+        padding: 4rem;
+        padding-left: 7rem;
+        margin-top: 30%;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+        align-items: center;
+        color: white;
+    }
+
+    footer span {
+        display: block;
+        padding-top: 1rem;
+    }
+}

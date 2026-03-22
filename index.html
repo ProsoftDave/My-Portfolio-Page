@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/style-for-index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="avatar-container"></div>
+
+        <section class="actions-wrapper">
+            <div style="color: #3b82f6;">Home</div>
+            <div>About</div>
+            <div>Projects</div>
+            <div>Contact</div>
+        </section>
+
+        <section class="socials-wrapper" id="socials">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter" id="x"></i>
+        </section>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="decoration-wrapper"></div>
+
+            <div class="my-photo-bg-holder">
+                <div class="my-photo-bg"></div>
+            </div>
+
+            <div class="text">
+                <h1>Tech Enthusiast | Problem Solver<br> <i class="fa-regular fa-pen-to-square" style="color: #4d7bc9;"></i> <em>developer</em></h1>
+
+                <p>Hi, I'm Promise Chibuchi, a Year 2 Software Engineering student with a passion for technology and problem-solving.
+                   I enjoy designing and developing software and web applications that are not only efficient and scalable but also intuitive and user-friendly.
+                </p>
+
+                 <div class="cta">
+                    <input type="email" placeholder="Enter your email" id="email-field">
+
+                    <button id="cta">Connect With Me</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <b>&copy; 2026 Promise Chibuchi.</b>
+
+            <span>All rights Reserved.</span>
+
+            <span>This portfolio represents my journey as a software engineering student, showcasing my skills, projects, and continuous growth in web development and technology</span>
+
+            <span>
+                I am passionate about building clean, efficient, and user-focused digital experiences, with a strong attention to detail and modern design principles. 
+                Thank you for taking the time to explore my work.
+            </span>
+        </p>
+    </footer>
+</body>
+
+<script>
+    const actions = Array.from(document.querySelector(".actions-wrapper").getElementsByTagName("div"));
+
+    actions.forEach(element => {
+        element.addEventListener("click", () => {
+            if (actions.indexOf(element) == 1) {
+                window.open("about.html", "_self")
+            };
+
+            if (actions.indexOf(element) == 2) {
+                window.open("projects.html", "_self")
+            };
+
+            if (actions.indexOf(element) == 3) {
+                window.open("contact.html", "_self")
+            };
+        });
+    });
+
+    const socialHandleWrapper = document.getElementById("socials");
+
+    const socialHandleIcons = Array.from(socialHandleWrapper.getElementsByTagName("i"));
+
+    const links = [
+        "https://www.instagram.com/david.promico?igsh=ZzlkcGlyNGY0MXNv",
+        "https://x.com/realchibubz"
+    ]
+
+    socialHandleIcons.forEach((icon, i) => {
+        icon.addEventListener("click", () => {
+            if (socialHandleIcons.indexOf(btn) == 0) {
+                window.open("whatsapp.html", "_blank");
+            } else {
+                window.open(links[i - 1], "_blank");
+            }
+        });
+    });
+
+    const email = document.getElementById("email-field");
+    const actionBtn = document.getElementById("cta");
+
+    /*actionBtn.addEventListener("click", () => {
+        //temporary I'd add proper validation later
+        if (email.value.length > 0) {
+            localStorage.setItem("guestEmail", email.value);
+
+            email.value = null
+
+            window.open("contact.html", "_self");
+
+        } else {
+            alert("Enter an email first.");
+        };
+    });*/
+</script>
+
+</html>
