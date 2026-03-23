@@ -15,13 +15,31 @@
 </head>
 <body>
     <header>
-        <div class="avatar-container"></div>
+        <div class="side-bar-holder" id="side-bar-holder">
+            <div class="side-bar" id="side-bar">
+                <div class="header">Navigations</div>
 
-        <section class="actions-wrapper">
-            <div>Home</div>
-            <div style="color: #3b82f6;">About</div>
-            <div>Projects</div>
-            <div>Contact</div>
+                <div class="navigation">
+                    <i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>
+                    <div><a href="pages/home.html">Home</a></div>
+                </div>
+
+                <div class="navigation">
+                    <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
+                    <div><a href="projects.html">My Projects</a></div>
+                </div>
+
+                <div class="navigation">
+                    <i class="fa-solid fa-address-book" style="color: rgb(255, 255, 255);"></i>
+                    <div><a href="contact.html">Contact Me</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="avatar-container" id="avatar-container"></div>
+
+        <section class="current-page">
+            <div>About</div>
         </section>
 
         <section class="socials-wrapper" id="socials">
@@ -109,23 +127,26 @@
 </body>
 
 <script>
-    const actions = Array.from(document.querySelector(".actions-wrapper").getElementsByTagName("div"));
+    const toggleElement = document.getElementById("avatar-container");
 
-    actions.forEach(element => {
-        element.addEventListener("click", () => {
-            if (actions.indexOf(element) == 0) {
-                window.open("../index.html", "_self")
-            };
+    const sideBar = document.getElementById("side-bar-holder");
 
-            if (actions.indexOf(element) == 2) {
-                window.open("projects.html", "_self")
-            };
+    const body = document.getElementsByTagName("main")[0];
 
-            if (actions.indexOf(element) == 3) {
-                window.open("contact.html", "_self")
-            };
+    const footer = document.getElementsByTagName("footer")[0];
+
+    const clickables = [body, footer]
+
+    toggleElement.addEventListener("click", () => {
+        sideBar.classList.toggle("active");
+    });
+
+    clickables.forEach(section => {
+        section.addEventListener("click", () => {
+            sideBar.classList.remove("active");
         });
     });
+
 
     const socialHandleWrapper = document.getElementById("socials");
 
@@ -138,8 +159,8 @@
 
     socialHandleIcons.forEach((icon, i) => {
         icon.addEventListener("click", () => {
-            if (socialHandleIcons.indexOf(btn) == 0) {
-                window.open("whatsapp.html", "_blank");
+            if (socialHandleIcons.indexOf(icon) == 0) {
+                /*window.open("pages/whatsapp.html", "_blank");*/
             } else {
                 window.open(links[i - 1], "_blank");
             }
