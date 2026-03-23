@@ -101,11 +101,12 @@ em {
         height: 60vh;
         display: grid;
         place-items: center;
-        background-color: black;
         background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1774203795/ChatGPT_Image_Mar_22_2026_07_22_45_PM_grkxb2.png");
         background-size: cover;
         background-repeat: no-repeat;
         margin-top: 25%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .decoration-wrapper {
@@ -155,41 +156,47 @@ em {
     }
 
     .cta {
-        padding-top: 2rem;
+        position: relative;
         display: flex;
         flex-direction: row;
-        width: 100%;
-        height: 40%;
-        gap: 5%;
         justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 5%;
+        padding-top: 0.7rem;
     }
 
     .cta input {
-        padding: 0.25rem;
+        font-size: 0.7rem;
+        width: 57%;
+        padding: 0.4rem;
         padding-left: 10px;
-        border: none;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        font-size: 0.65rem;
-        width: 60%;
-        height: 21%;
-        transition: border-color 0.5s ease-in;
+        outline: none;
+        border-radius: 0px;
+        box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: border-color 0.2s ease-in;
     }
 
-    .cta input:focus {
-        border: 1px solid;
+    input:focus {
+        outline: none;
+        border: 2px solid;
         border-color: #2626ff;
     }
 
     .cta button {
-        width: 40%;
-        padding: 0.33rem;
-        font-size: 0.65rem;
-        font-weight: bold;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        font-size: 0.7rem;
+        width: 25%;
+        height: 1.8rem;
+        padding: 0.1rem;
         border: none;
-        background-color: #243b6b;
         color: white;
-        transition: background-color 0.3s ease-in;
+        background-color: #243b6b;
+        font-weight: bold;
+        box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: background-color 0.2s ease-in;
     }
 
     .cta button:hover {
@@ -199,13 +206,13 @@ em {
     footer {
         background-color: #111827;
         padding: 2rem;
-        margin-top: 40%;
+        margin-top: 57%;
     }
 
     footer div span {
         display: block;
         padding-top: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: white;
     }
 }
@@ -409,7 +416,7 @@ em {
         padding-top: 1rem;
         padding-left: 6rem;
         padding-right: 6rem;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: white;
     }
 }
