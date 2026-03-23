@@ -77,15 +77,15 @@
     actions.forEach(element => {
         element.addEventListener("click", () => {
             if (actions.indexOf(element) == 1) {
-                window.open("about.html", "_self")
+                window.open("pages/about.html", "_self")
             };
 
             if (actions.indexOf(element) == 2) {
-                window.open("projects.html", "_self")
+                window.open("pages/projects.html", "_self")
             };
 
             if (actions.indexOf(element) == 3) {
-                window.open("contact.html", "_self")
+                window.open("pages/contact.html", "_self")
             };
         });
     });
@@ -102,7 +102,7 @@
     socialHandleIcons.forEach((icon, i) => {
         icon.addEventListener("click", () => {
             if (socialHandleIcons.indexOf(btn) == 0) {
-                window.open("whatsapp.html", "_blank");
+                window.open("pages/whatsapp.html", "_blank");
             } else {
                 window.open(links[i - 1], "_blank");
             }

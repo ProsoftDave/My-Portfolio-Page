@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+
+    <link rel="stylesheet" href="../css/style-for-about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="avatar-container"></div>
+
+        <section class="actions-wrapper">
+            <div>Home</div>
+            <div style="color: #3b82f6;">About</div>
+            <div>Projects</div>
+            <div>Contact</div>
+        </section>
+
+        <section class="socials-wrapper" id="socials">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter" id="x"></i>
+        </section>
+    </header>
+
+    <main>
+        <div class="page-content">
+            <section class="about-content">
+                <div class="overlay"></div>
+
+                <div class="about-text">
+                    <h1>About Me</h1>
+
+                    <span><q>I enjoy solving problems through code and bringing ideas to life on the web.</q></span>
+
+                    <span><q>Whether it's crafting smooth user interfaces or structuring scalable systems, I'm always looking for ways to improve and push my skills further.</q></span>
+
+                    <span><q>My journey into tech is driven by curiosity and a desire to create solutions that make everyday experiences smoother and more meaningful.</q></span>
+
+                    <span><q>Beyond coding, I enjoy thinking through problems, refining ideas, and turning concepts into real, working solutions.</q></span>
+                </div>
+            </section>
+
+            <section class="skill-cards">
+                <div class="container">
+                    <div style="background-color: #dbe9ff;"><i class="fa-solid fa-code" style="color: #4d7bc9;"></i></div>
+
+                    <span class="skill-title">Frontend Development</span>
+
+                    <span class="skill-text">
+                        I create responsive, accessible, and performance-driven interfaces using modern web technologies to deliver clean and intuitive user experiences.
+                    </span>
+                </div>
+
+                <div class="container">
+                    <div style="background-color: #dff3ff;"><i class="fa-solid fa-chart-simple" style="color: #2f8fbd;"></i></div>
+
+                    <span class="skill-title">Data Analysis</span>
+
+                    <span class="skill-text">
+                        I work with datasets to identify patterns, trends, and opportunities that support informed decision-making and better outcomes.
+                    </span>
+                </div>
+
+                <div class="container">
+                    <div style="background-color: #e6e6ff;"><i class="fa-solid fa-robot" style="color: #5a6fe0;"></i></div>
+
+                    <span class="skill-title">AI Automation</span>
+
+                    <span class="skill-text">
+                        I design and integrate AI-driven solutions that automate workflows, analyze data, and enhance productivity.
+                    </span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <b>&copy; 2026 Promise Chibuchi.</b>
+
+            <span>All rights Reserved.</span>
+
+            <span>
+                Built with a strong passion for clean design, thoughtful engineering, and continuous learning.
+                I'm committed to growing as a software engineer, exploring new technologies, and refining my skills to build efficient, scalable, and user-friendly solutions.
+                Every project I take on is an opportunity to solve real problems, create meaningful experiences, and push the boundaries of what I can build.
+                I value simplicity, performance, and attention to detail in everything I create.
+            </span>
+
+            <span>
+                Beyond code, I enjoy learning, experimenting, and staying curious about the evolving world of technology.
+                I believe great products are built through collaboration, creativity, and a drive to keep improving.
+                Let's connect and create something impactful together.
+            </span>
+        </p>
+    </footer>
+</body>
+
+<script>
+    const actions = Array.from(document.querySelector(".actions-wrapper").getElementsByTagName("div"));
+
+    actions.forEach(element => {
+        element.addEventListener("click", () => {
+            if (actions.indexOf(element) == 0) {
+                window.open("../index.html", "_self")
+            };
+
+            if (actions.indexOf(element) == 2) {
+                window.open("projects.html", "_self")
+            };
+
+            if (actions.indexOf(element) == 3) {
+                window.open("contact.html", "_self")
+            };
+        });
+    });
+
+    const socialHandleWrapper = document.getElementById("socials");
+
+    const socialHandleIcons = Array.from(socialHandleWrapper.getElementsByTagName("i"));
+
+    const links = [
+        "https://www.instagram.com/david.promico?igsh=ZzlkcGlyNGY0MXNv",
+        "https://x.com/realchibubz"
+    ]
+
+    socialHandleIcons.forEach((icon, i) => {
+        icon.addEventListener("click", () => {
+            if (socialHandleIcons.indexOf(btn) == 0) {
+                window.open("whatsapp.html", "_blank");
+            } else {
+                window.open(links[i - 1], "_blank");
+            }
+        });
+    });
+</script>
+
+</html>
