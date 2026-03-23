@@ -39,7 +39,7 @@ em {
         height: 100vh;
         display: grid;
         place-items: center;
-        left: -20rem;
+        left: -40rem;
         transition: all 1s ease;
     }
 
