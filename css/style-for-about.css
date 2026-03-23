@@ -152,7 +152,7 @@ em {
         transition: transform 0.5s ease-in;
         padding: 1rem;
     }
-
+ 
     .skill-cards .container:hover {
         transform: scale(1.1);
     }
@@ -183,7 +183,7 @@ em {
     .container .skill-text {
         max-width: 80%;
         font-size: 0.7rem;
-        text-align: justify;
+        text-align: center;
     }
 
     footer {
@@ -192,14 +192,10 @@ em {
         margin-top: 150%;
     }
 
-    footer p {
-        font-size: 0.55rem;
-        align-items: center;
-        color: white;
-    }
-
-    footer span {
+    footer div span {
         display: block;
         padding-top: 1rem;
+        font-size: 0.8rem;
+        color: white;
     }
 }

@@ -118,16 +118,16 @@ em {
     .text {
         position: relative;
         color: white;
-        max-width: 60%;
+        max-width: 70%;
     }
 
     .text h1 {
-        font-size: 0.9rem;
+        font-size: 2rem;
         text-align: left;
     }
 
     .text p {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .my-photo-bg-holder {
@@ -169,7 +169,7 @@ em {
         padding-left: 10px;
         border: none;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        font-size: 0.55rem;
+        font-size: 0.65rem;
         width: 60%;
         height: 21%;
         transition: border-color 0.5s ease-in;
@@ -182,8 +182,8 @@ em {
 
     .cta button {
         width: 40%;
-        padding: 0.35rem;
-        font-size: 0.5rem;
+        padding: 0.33rem;
+        font-size: 0.65rem;
         font-weight: bold;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         border: none;
@@ -202,15 +202,11 @@ em {
         margin-top: 40%;
     }
 
-    footer p {
-        font-size: 0.55rem;
-        align-items: center;
-        color: white;
-    }
-
-    footer span {
+    footer div span {
         display: block;
         padding-top: 1rem;
+        font-size: 0.8rem;
+        color: white;
     }
 }
 
@@ -404,19 +400,16 @@ em {
 
     footer {
         background-color: #111827;
-        padding: 4rem;
-        padding-left: 7rem;
-        margin-top: 30%;
+        padding: 2rem;
+        margin-top: 40%;
     }
 
-    footer p {
-        font-size: 0.85rem;
-        align-items: center;
-        color: white;
-    }
-
-    footer span {
+    footer div span {
         display: block;
         padding-top: 1rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        font-size: 0.9rem;
+        color: white;
     }
 }
