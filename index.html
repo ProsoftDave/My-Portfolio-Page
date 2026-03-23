@@ -103,10 +103,10 @@
     var endX = 0
 
     function swipe(diff) {
-        if (diff > 0) {
+        if (diff > 50) {
             sideBar.classList.remove("active")
         }
-    }
+    };
 
     sideBar.addEventListener("touchstart", (e) => {
         startX = e.touches[0].clientX
