@@ -28,8 +28,8 @@ em {
         flex-direction: row;
         justify-content: center;
         gap: 5rem;
-        padding-top: 4%;
-        padding-bottom: 4%;
+        padding-top: 6%;
+        padding-bottom: 6%;
         background-color: #111827;
     }
 
@@ -124,7 +124,7 @@ em {
     }
 
     .socials-wrapper i {
-        font-size: 0.8em;
+        font-size: 0.9em;
         color: white;
     }
 
