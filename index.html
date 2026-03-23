@@ -13,11 +13,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="side-bar-holder" id="side-bar-holder">
             <div class="side-bar" id="side-bar">
-                <div class="header">Navigations</div>
+                <span class="avatar-container" id="avatar-container"></span>
+
+                <div class="header">Promise Chibuchi</div>
 
                 <div class="navigation">
                     <i class="fa-solid fa-circle-info" style="color: rgb(255, 255, 255);"></i>
@@ -36,7 +39,7 @@
             </div>
         </div>
 
-        <div class="avatar-container" id="avatar-container"></div>
+        <div class="menu" id="menu"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></div>
 
         <section class="current-page">
             <div>Home</div>
@@ -90,21 +93,25 @@
 </body>
 
 <script>
-    const toggleElement = document.getElementById("avatar-container");
+    const toggleElement = document.getElementById("menu");
 
     const sideBar = document.getElementById("side-bar-holder");
 
     toggleElement.addEventListener("click", () => {
         sideBar.classList.toggle("active");
+
+        toggleElement.classList.toggle("active");
     });
 
-    var startX = 0
+    var startX = 0;
 
-    var endX = 0
+    var endX = 0;
 
     function swipe(diff) {
         if (diff > 50) {
-            sideBar.classList.remove("active")
+            sideBar.classList.remove("active");
+
+            toggleElement.classList.remove("active");
         }
     };
 
