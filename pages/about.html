@@ -131,22 +131,25 @@
 
     const sideBar = document.getElementById("side-bar-holder");
 
-    const body = document.getElementsByTagName("main")[0];
+   var startX = 0
 
-    const footer = document.getElementsByTagName("footer")[0];
+    var endX = 0
 
-    const clickables = [body, footer]
+    function swipe(diff) {
+        if (diff > 50) {
+            sideBar.classList.remove("active")
+        }
+    };
 
-    toggleElement.addEventListener("click", () => {
-        sideBar.classList.toggle("active");
+    sideBar.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX
     });
 
-    clickables.forEach(section => {
-        section.addEventListener("click", () => {
-            sideBar.classList.remove("active");
-        });
-    });
+    sideBar.addEventListener("touchend", (e) => {
+        endX = e.changedTouches[0].clientX
 
+        swipe(startX - endX)
+    });
 
     const socialHandleWrapper = document.getElementById("socials");
 
