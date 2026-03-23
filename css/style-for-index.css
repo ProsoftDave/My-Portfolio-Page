@@ -27,15 +27,62 @@ em {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 2rem;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        gap: 5rem;
+        padding-top: 4%;
+        padding-bottom: 4%;
         background-color: #111827;
     }
 
+    .side-bar {
+        position: fixed;
+        width: 45vw;
+        height: 89%;
+        background-color: rgb(36, 59, 107);
+        padding: 3rem;
+        left: -17rem;
+        border-radius: 10px;
+        margin-top: -4%;
+        transition: all 0.3s ease;
+    }
+
+    .side-bar.active {
+        left: 0;
+        transition: 0.3s ease;
+    }
+
+    .side-bar .navigation {
+        color: white;
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        transition: transform 0.3s ease-in;
+    }
+
+    .side-bar .navigation:active {
+        transform: scale(1.1);
+    }
+
+    .navigation div a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .side-bar .navigation i {
+        font-size: 1.1rem;
+    }
+
+    .side-bar .header {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-top: 0;
+    }
+
     .avatar-container {
-        width: 1rem;
-        height: 1rem;
+        width: 1.7rem;
+        height: 1.7rem;
         display: grid;
         place-items: center;
         border-radius: 50%;
@@ -45,45 +92,39 @@ em {
         background-repeat: no-repeat;
     }
 
-    .actions-wrapper {
+    .current-page {
         width: auto;
-        height: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1.7rem;
+        height: 1.7rem;
+        display: grid;
+        place-items: center;
+        margin-left: -3rem;
     }
 
-    .actions-wrapper div {
-        color: white;
+    .current-page div {
+        color: #3b82f6;
         font-weight: bold;
-        font-size: 0.55rem;
+        font-size: 0.8rem;
         transition: transform 0.3s ease-in;
     }
 
-    .actions-wrapper div:hover {
+    .current-page div:hover {
         transform: scale(1.1);
         cursor: pointer;
     }
 
     .socials-wrapper {
         width: auto;
-        height: 1rem;
+        height: 1.7rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
+        gap: 3rem;
     }
 
     .socials-wrapper i {
-        font-size: 0.55rem;
+        font-size: 0.8em;
         color: white;
-    }
-
-    .socials-wrapper #x {
-        font-size: 0.55rem;
     }
 
     main {
@@ -104,9 +145,9 @@ em {
         background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1774203795/ChatGPT_Image_Mar_22_2026_07_22_45_PM_grkxb2.png");
         background-size: cover;
         background-repeat: no-repeat;
-        margin-top: 25%;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        margin-top: 20%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     .decoration-wrapper {
