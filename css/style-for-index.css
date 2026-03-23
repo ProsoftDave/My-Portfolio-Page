@@ -33,25 +33,33 @@ em {
         background-color: #111827;
     }
 
-    .side-bar {
+    .side-bar-holder {
         position: fixed;
-        width: 30vw;
-        height: 84vh;
-        background-color: rgb(36, 59, 107);
-        padding: 3rem;
-        left: -17rem;
-        border-radius: 10px;
+        width: 80vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        left: -20rem;
         transition: all 1s ease;
     }
 
-    .side-bar.active {
-        left: -1rem;
+    .side-bar {
+        width: 60%;
+        height: 80%;
+        background-color: rgb(36, 59, 107);
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+    }
+
+    .side-bar-holder.active {
+        left: -2rem;
         transition: 1s ease;
     }
 
     .side-bar .navigation {
         color: white;
-        padding-top: 5rem;
+        padding-top: 4rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -79,7 +87,7 @@ em {
         color: white;
         font-weight: bold;
         font-size: 1.2rem;
-        padding-top: 0;
+        padding-top: 30%;
     }
 
     .avatar-container {
@@ -211,10 +219,11 @@ em {
     }
 
     .cta input {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         width: 57%;
         padding: 0.4rem;
         padding-left: 10px;
+        border: none;
         outline: none;
         border-radius: 0px;
         box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);

@@ -15,22 +15,24 @@
 </head>
 <body>
     <header>
-        <div class="side-bar" id="side-bar">
-            <div class="header">Navigations</div>
+        <div class="side-bar-holder" id="side-bar-holder">
+            <div class="side-bar" id="side-bar">
+                <div class="header">Navigations</div>
 
-            <div class="navigation">
-                <i class="fa-solid fa-circle-info" style="color: rgb(255, 255, 255);"></i>
-                <div><a href="pages/about.html">About</a></div>
-            </div>
+                <div class="navigation">
+                    <i class="fa-solid fa-circle-info" style="color: rgb(255, 255, 255);"></i>
+                    <div><a href="pages/about.html">About</a></div>
+                </div>
 
-            <div class="navigation">
-                <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
-                <div><a href="pages/projects.html">Projects</a></div>
-            </div>
+                <div class="navigation">
+                    <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
+                    <div><a href="pages/projects.html">Projects</a></div>
+                </div>
 
-            <div class="navigation">
-                <i class="fa-regular fa-address-book" style="color: rgb(255, 255, 255);"></i>
-                <div><a href="pages/contact.html">Contact</a></div>
+                <div class="navigation">
+                    <i class="fa-regular fa-address-book" style="color: rgb(255, 255, 255);"></i>
+                    <div><a href="pages/contact.html">Contact</a></div>
+                </div>
             </div>
         </div>
 
@@ -90,7 +92,7 @@
 <script>
     const toggleElement = document.getElementById("avatar-container");
 
-    const sideBar = document.getElementById("side-bar");
+    const sideBar = document.getElementById("side-bar-holder");
 
     const body = document.getElementsByTagName("main")[0];
 
