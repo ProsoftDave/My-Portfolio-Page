@@ -65,18 +65,18 @@
                     <p>Have a project in mind or just want to say hello? Feel free to reach out — I'd love to hear from you.</p>
                 </div>
 
-                <form action="post">
+                <form action="https://promisechibuchi-server.onrender.com/submit" method="post">
                     <div>
                         <i class="fa-solid fa-user" style="color: rgb(128, 128, 128);"></i>
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" name="name">
                     </div>
 
                     <div>
                         <i class="fa-solid fa-envelope" style="color: rgb(128, 128, 128);"></i>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" name="email">
                     </div>
 
-                    <textarea name="message" placeholder="Message"></textarea>
+                    <textarea placeholder="Message" name="msg"></textarea>
 
                     <input type="submit" class="submit" value="Send">
                 </form>

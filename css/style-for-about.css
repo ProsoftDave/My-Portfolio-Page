@@ -59,7 +59,7 @@ em {
 
     .side-bar .navigation {
         color: white;
-        padding-top: 4rem;
+        margin-top: 4rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -99,7 +99,7 @@ em {
     }
 
     .menu.active {
-        transform: translateX(-100%);
+        transform: translateX(-1.5rem);
     }
 
     .menu i {
