@@ -250,17 +250,15 @@ em {
     }
 
     form div input:hover, form textarea:hover {
-        background-color: #f2f2f2;
-    }
-
-    form div input:hover, form textarea:hover {
         outline: none;
         border: 2px solid;
         border-color: #2626ff;
+        background-color: #f2f2f2;
     }
 
     form div input::placeholder, form textarea::placeholder {
         color: grey;
+        font-size: 0.5rem;
         font-weight: bold;
     }
 
