@@ -164,7 +164,7 @@ em {
         position: relative;
         width: 100%;
         height: 80%;
-        margin-top: 18%;
+        margin-top: 6rem;
         background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1774004662/premium_photo-1683309563937-5ec089c1ebd4_sracsw.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -187,8 +187,8 @@ em {
         border-radius: 20px;
         display: grid;
         place-items: center;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
     .form-container img {
@@ -246,6 +246,7 @@ em {
     }
 
     form textarea {
+        width: 95%;
         height: 5rem;
     }
 
@@ -264,7 +265,7 @@ em {
 
     form .submit {
         margin-top: 0.5rem;
-        width: 90%;
+        width: 100%;
         height: 1.7rem;
         background-color: #243b6b;
         color: white;
