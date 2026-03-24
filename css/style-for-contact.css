@@ -164,12 +164,14 @@ em {
         position: relative;
         width: 100%;
         height: 80%;
-        margin-top: 6rem;
+        margin-top: 4.3rem;
         background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1774004662/premium_photo-1683309563937-5ec089c1ebd4_sracsw.png");
         background-repeat: no-repeat;
         background-size: cover;
         display: grid;
         place-items: center;
+        transform: translateY(50px);
+        animation: fadeIn 1s forwards;
     }
 
     .overlay {
