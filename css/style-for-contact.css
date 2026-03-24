@@ -5,6 +5,7 @@ html {
 body {
     font-family: "Google Sans";
     margin: 0;
+    background-color: white;
 }
 
 em {
@@ -245,6 +246,7 @@ em {
         font-family: "Google Sans";
         font-size: 0.6rem;
         transition: 0.5s ease-in;
+        background-color: white;
     }
 
     form textarea {
