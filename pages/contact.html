@@ -73,7 +73,7 @@
 
                     <div>
                         <i class="fa-solid fa-envelope" style="color: rgb(128, 128, 128);"></i>
-                        <input type="email" placeholder="Email" name="email">
+                        <input type="email" placeholder="Email" name="email" id="email-field">
                     </div>
 
                     <textarea placeholder="Message" name="msg"></textarea>
@@ -144,6 +144,12 @@
             }
         });
     });
+
+    const emailField = document.getElementById("msg");
+
+    emailField.value = localStorage.getItem("guestEmail")
+
+    localStorage.clear()
 </script>
 
 </html>
