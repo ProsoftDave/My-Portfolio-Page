@@ -22,6 +22,7 @@ header {
 em {
     color: #4d7bc9;
     text-decoration: none;
+    font-style: normal;
 }
 
 .decoration-wrapper {
@@ -96,11 +97,24 @@ main {
 
 footer {
     background-color: #111827;
-    color: white;
+    opacity: 0.95;
+}
+
+footer div {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+.rights {
+    margin-top: 4%;
+    font-weight: bold;
 }
 
 footer div span {
     display: block;
+    color: grey;
 }
 
 @keyframes fadeIn {
@@ -127,27 +141,28 @@ footer div span {
 
     .side-bar-holder {
         position: fixed;
-        width: 80vw;
+        width: 70vw;
         height: 100vh;
         display: grid;
         place-items: center;
         top: 0;
-        left: -40rem;
+        left: -100%;
         transition: all 1s ease;
-    }
-
-    .side-bar {
-        width: 60%;
-        height: 80%;
-        background-color: rgb(36, 59, 107);
-        padding: 3rem;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
+        overflow-y: scroll;
     }
 
     .side-bar-holder.active {
-        left: -2rem;
+        left: 0%;
         transition: 1s ease;
+    }
+
+    .side-bar {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(36, 59, 107);
+        padding-left: 30%;
+        padding-top: 40%;
+        box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.2);
     }
 
     .side-bar .navigation {
@@ -180,7 +195,7 @@ footer div span {
         color: white;
         font-weight: bold;
         font-size: 1.2rem;
-        padding-top: 14%;
+        padding-top: 10%;
     }
 
     .avatar-container {
@@ -193,6 +208,7 @@ footer div span {
         background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1774211166/ChatGPT_Image_Mar_18_2026_02_44_22_AM_smu1j8-removebg-preview_m0seoh.png");
         background-size: cover;
         background-repeat: no-repeat;
+        margin-top: 2rem;
     }
 
     .menu {
@@ -201,10 +217,6 @@ footer div span {
         display: grid;
         place-items: center;
         transition: 0.5s ease;
-    }
-
-    .menu.active {
-        transform: translateX(-1.5rem);
     }
 
     .menu i {
@@ -324,6 +336,7 @@ footer div span {
         display: block;
         padding-top: 1rem;
         font-size: 0.7rem;
+        text-align: center;
     }
 }
 
@@ -459,20 +472,16 @@ footer div span {
     }
 
     footer {
-        display: grid;
-        place-items: center;
         margin-top: 20%;
         padding-top: 4rem;
         padding-bottom: 4rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
     }
 
     footer div span {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding-top: 1rem;
-        color: white;
-        max-width: 100%;
+        max-width: 80%;
+        text-align: center;
     }
 }
 
@@ -610,9 +619,8 @@ footer div span {
     }
 
     footer div span {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding-top: 1rem;
-        color: white;
         max-width: 100%;
     }
 

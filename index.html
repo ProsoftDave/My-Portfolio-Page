@@ -87,16 +87,15 @@
 
     <footer>
         <div>
-            <span><b>&copy; 2026 Promise Chibuchi.</b></span>
-
-            <span>All rights Reserved.</span>
-
             <span>This portfolio represents my journey as a software engineering student, showcasing my skills, projects, and continuous growth in web development and technology</span>
 
             <span>
                 I am passionate about building clean, efficient, and user-focused digital experiences, with a strong attention to detail and modern design principles. 
                 Thank you for taking the time to explore my work.
             </span>
+
+            <span class="rights">All rights Reserved.</span>
+            <span><b>&copy; 2026 Promise Chibuchi.</b></span>
         </div>
     </footer>
 </body>
@@ -108,8 +107,6 @@
 
     toggleElement.addEventListener("click", () => {
         sideBar.classList.toggle("active");
-
-        toggleElement.classList.toggle("active");
     });
 
     var startX = 0;
@@ -117,10 +114,8 @@
     var endX = 0;
 
     function swipe(diff) {
-        if (diff > 50) {
+        if (diff > 10) {
             sideBar.classList.remove("active");
-
-            toggleElement.classList.remove("active");
         }
     };
 
