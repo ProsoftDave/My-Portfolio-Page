@@ -15,98 +15,108 @@
 </head>
 
 <body>
-    <header>
-        <div class="side-bar-holder" id="side-bar-holder">
-            <div class="side-bar" id="side-bar">
-                <span class="avatar-container" id="avatar-container"></span>
+    <div class="side-bar-holder" id="side-bar-holder">
+        <div class="side-bar">
+            <div class="navigation-hero">
+                <div class="avatar-container" id="avatar-container"></div>
 
                 <div class="header">Promise Chibuchi</div>
-
-                <div class="navigation">
-                    <i class="fa-solid fa-circle-info" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="pages/about.html">About Me</a></div>
-                </div>
-
-                <div class="navigation">
-                    <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="pages/projects.html">My Projects</a></div>
-                </div>
-
-                <div class="navigation">
-                    <i class="fa-solid fa-address-book" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="pages/contact.html">Contact Me</a></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu" id="menu"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></div>
-
-        <section class="current-page">
-            <div>Home</div>
-        </section>
-
-        <div class="desktop-avatar-container"></div>
-
-        <section class="desktop-navigations">
-            <div style="color: #4d7bc9;">Home</div>
-            <div>About</div>
-            <div>Projects</div>
-            <div>Contact</div>
-        </section>
-
-        <section class="socials-wrapper" id="socials">
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-        </section>
-    </header>
-
-    <main>
-        <div class="content" id="content">
-            <div class="decoration-wrapper"></div>
-
-            <div class="my-photo-bg-holder">
-                <div class="my-photo-bg"></div>
             </div>
 
-            <div class="text">
-                <h1>Tech Enthusiast | Problem Solver<br> <i class="fa-regular fa-pen-to-square" style="color: #4d7bc9;"></i> <em>developer</em></h1>
+            <div class="navigation">
+                <i class="fa-solid fa-circle-info" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="pages/about.html">About Me</a></div>
+            </div>
 
-                <p>Hi, I'm Promise Chibuchi, a Year 2 Software Engineering student with a passion for technology and problem-solving.
-                   I enjoy designing and developing software and web applications that are not only efficient and scalable but also intuitive and user-friendly.
-                </p>
+            <div class="navigation">
+                <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="pages/projects.html">My Projects</a></div>
+            </div>
 
-                 <div class="cta">
-                    <input type="email" placeholder="Enter your email" id="email-field">
-
-                    <button id="cta">Connect</button>
-                </div>
+            <div class="navigation">
+                <i class="fa-solid fa-address-book" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="pages/contact.html">Contact Me</a></div>
             </div>
         </div>
-    </main>
+    </div>
 
-    <footer>
-        <div>
-            <span>This portfolio represents my journey as a software engineering student, showcasing my skills, projects, and continuous growth in web development and technology</span>
+    <div class="overlay" id="overlay"></div>
 
-            <span>
-                I am passionate about building clean, efficient, and user-focused digital experiences, with a strong attention to detail and modern design principles. 
-                Thank you for taking the time to explore my work.
-            </span>
+    <div class="all" id="main-page-content">
+        <header>
+            <div class="menu"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></div>
 
-            <span class="rights">All rights Reserved.</span>
-            <span><b>&copy; 2026 Promise Chibuchi.</b></span>
-        </div>
-    </footer>
+            <section class="current-page">
+                <div>Home</div>
+            </section>
+
+            <div class="desktop-avatar-container"></div>
+
+            <section class="desktop-navigations">
+                <a style="color: #4d7bc9;">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/projects.html">Projects</a>
+                <a href="pages/contact.html">Contact</a>
+            </section>
+
+            <section class="socials-wrapper" id="socials">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </section>
+        </header>
+
+        <main>
+            <div class="content">
+                <div class="decoration-wrapper"></div>
+
+                <div class="my-photo-bg-holder">
+                    <div class="my-photo-bg"></div>
+                </div>
+
+                <div class="text">
+                    <h1>Tech Enthusiast | Problem Solver<br> <i class="fa-regular fa-pen-to-square" style="color: #4d7bc9;"></i> <em>developer</em></h1>
+
+                    <p>Hi, I'm Promise Chibuchi, a Year 2 Software Engineering student with a passion for technology and problem-solving.
+                    I enjoy designing and developing software and web applications that are not only efficient and scalable but also intuitive and user-friendly.
+                    </p>
+
+                    <div class="cta">
+                        <input type="email" placeholder="Enter your email" id="email-field">
+
+                        <button id="cta">Connect</button>
+                    </div>
+                </div> 
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <span>This portfolio represents my journey as a software engineering student, showcasing my skills, projects, and continuous growth in web development and technology</span>
+
+                <span>
+                    I am passionate about building clean, efficient, and user-focused digital experiences, with a strong attention to detail and modern design principles. 
+                    Thank you for taking the time to explore my work.
+                </span>
+
+                <span class="rights">All rights Reserved.</span>
+                <span><b>&copy; 2026 Promise Chibuchi.</b></span>
+            </div>
+        </footer>
+    </div>
 </body>
 
 <script>
-    const toggleElement = document.getElementById("menu");
+    const toggleElement = document.getElementById("main-page-content").firstElementChild.firstElementChild;
 
     const sideBar = document.getElementById("side-bar-holder");
 
+    const overlay = document.getElementById("overlay");
+
     toggleElement.addEventListener("click", () => {
         sideBar.classList.toggle("active");
+
+        overlay.classList.toggle("active");
     });
 
     var startX = 0;
@@ -114,8 +124,10 @@
     var endX = 0;
 
     function swipe(diff) {
-        if (diff > 10) {
+        if (diff > 50) {
             sideBar.classList.remove("active");
+
+            overlay.classList.remove("active");
         }
     };
 

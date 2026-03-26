@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
@@ -15,104 +15,121 @@
 </head>
 
 <body>
-    <header>
-        <div class="side-bar-holder" id="side-bar-holder">
-            <div class="side-bar" id="side-bar">
-                <span class="avatar-container" id="avatar-container"></span>
+    <div class="side-bar-holder" id="side-bar-holder">
+        <div class="side-bar">
+            <div class="navigation-hero">
+                <div class="avatar-container" id="avatar-container"></div>
 
                 <div class="header">Promise Chibuchi</div>
+            </div>
 
-                <div class="navigation">
-                    <i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="../index.html">Home</a></div>
-                </div>
+            <div class="navigation">
+                <i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="../index.html">Home</a></div>
+            </div>
 
-                <div class="navigation">
-                    <i class="fa-solid fa-circle-info" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="about.html">About Me</a></div>
-                </div>
+            <div class="navigation">
+                <i class="fa-solid fa-circle-info" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="about.html">About Me</a></div>
+            </div>
 
-                <div class="navigation">
-                    <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="projects.html">My Projects</a></div>
-                </div>
+            <div class="navigation">
+                <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="projects.html">My Projects</a></div>
             </div>
         </div>
+    </div>
 
-        <div class="menu" id="menu"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></div>
+    <div class="overlay" id="overlay"></div>
 
-        <section class="current-page">
-            <div>Contact</div>
-        </section>
+    <div class="all" id="main-page-content">
+        <header>
+            <div class="menu"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></div>
 
-        <section class="socials-wrapper" id="socials">
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-        </section>
-    </header>
+            <section class="current-page">
+                <div>Contact</div>
+            </section>
 
-    <main>
-        <div class="background">
-            <div class="overlay"></div>
+            <div class="desktop-avatar-container"></div>
 
-            <div class="form-container">
-                <img src="https://res.cloudinary.com/duarq8azw/image/upload/v1773998618/ChatGPT_Image_Mar_20__2026__10_22_27_AM-removebg-preview_oidzva.png" alt="envelope">
+            <section class="desktop-navigations">
+                <a style="color: #4d7bc9;">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/projects.html">Projects</a>
+                <a href="pages/contact.html">Contact</a>
+            </section>
 
-                <div class="text">
-                    <h2>Get In Touch</h2>
+            <section class="socials-wrapper" id="socials">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </section>
+        </header>
 
-                    <p>Have a project in mind or just want to say hello? Feel free to reach out — I'd love to hear from you.</p>
+        <main>
+            <div class="background">
+                <div class="overlay-bg"></div>
+
+                <div class="form-container">
+                    <img src="https://res.cloudinary.com/duarq8azw/image/upload/v1773998618/ChatGPT_Image_Mar_20__2026__10_22_27_AM-removebg-preview_oidzva.png" alt="envelope">
+
+                    <div class="text">
+                        <h2>Get In Touch</h2>
+
+                        <p>Have a project in mind or just want to say hello? Feel free to reach out — I'd love to hear from you.</p>
+                    </div>
+
+                    <form action="https://promisechibuchi-server.onrender.com/submit" method="post">
+                        <div>
+                            <i class="fa-solid fa-user" style="color: rgb(128, 128, 128);"></i>
+                            <input type="text" placeholder="Name" name="name">
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-envelope" style="color: rgb(128, 128, 128);"></i>
+                            <input type="email" placeholder="Email" name="email" id="email-field">
+                        </div>
+
+                        <textarea placeholder="Message" name="msg"></textarea>
+
+                        <input type="submit" class="submit" value="Send">
+                    </form>
                 </div>
-
-                <form action="https://promisechibuchi-server.onrender.com/submit" method="post">
-                    <div>
-                        <i class="fa-solid fa-user" style="color: rgb(128, 128, 128);"></i>
-                        <input type="text" placeholder="Name" name="name">
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-envelope" style="color: rgb(128, 128, 128);"></i>
-                        <input type="email" placeholder="Email" name="email" id="email-field">
-                    </div>
-
-                    <textarea placeholder="Message" name="msg"></textarea>
-
-                    <input type="submit" class="submit" value="Send">
-                </form>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <footer>
-        <div>
-            <span><b>&copy; 2026 Promise Chibuchi.</b></span>
+        <footer>
+            <div>
+                <span><b>&copy; 2026 Promise Chibuchi.</b></span>
 
-            <span>All rights Reserved.</span>
-        </div>
-    </footer>
+                <span>All rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
 </body>
 
 <script>
-    const toggleElement = document.getElementById("menu");
+    const toggleElement = document.getElementById("main-page-content").firstElementChild.firstElementChild;
 
     const sideBar = document.getElementById("side-bar-holder");
+
+    const overlay = document.getElementById("overlay");
 
     toggleElement.addEventListener("click", () => {
         sideBar.classList.toggle("active");
 
-        toggleElement.classList.toggle("active");
+        overlay.classList.toggle("active");
     });
 
-   var startX = 0
+    var startX = 0;
 
-    var endX = 0
+    var endX = 0;
 
     function swipe(diff) {
         if (diff > 50) {
             sideBar.classList.remove("active");
 
-            toggleElement.classList.remove("active");
+            overlay.classList.remove("active");
         }
     };
 
@@ -150,6 +167,21 @@
     emailField.value = localStorage.getItem("guestEmail")
 
     localStorage.clear()
+
+
+    const form = document.getElementById("main-page-content").getElementsByTagName("main")[0].getElementsByTagName("form")[0]
+
+    const inputFields = [form[0], form[1], form[2]]
+
+    inputFields.forEach(field => {
+        field.addEventListener("click", () => {
+            field.classList.toggle("active");
+        });
+
+        field.addEventListener("blur", () => {
+            field.classList.remove("active");
+        });
+    });
 </script>
 
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
@@ -14,124 +14,147 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="side-bar-holder" id="side-bar-holder">
-            <div class="side-bar" id="side-bar">
-                <span class="avatar-container" id="avatar-container"></span>
+    <div class="side-bar-holder" id="side-bar-holder">
+        <div class="side-bar"> 
+            <div class="navigation-hero">
+                <div class="avatar-container" id="avatar-container"></div>
 
                 <div class="header">Promise Chibuchi</div>
+            </div>
 
-                <div class="navigation">
-                    <i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="../index.html">Home</a></div>
-                </div>
+            <div class="navigation">
+                <i class="fa-solid fa-house" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="../index.html">Home</a></div>
+            </div>
 
-                <div class="navigation">
-                    <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="projects.html">My Projects</a></div>
-                </div>
+            <div class="navigation">
+                <i class="fa-solid fa-cube" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="projects.html">My Projects</a></div>
+            </div>
 
-                <div class="navigation">
-                    <i class="fa-solid fa-address-book" style="color: rgb(255, 255, 255);"></i>
-                    <div><a href="contact.html">Contact Me</a></div>
-                </div>
+            <div class="navigation">
+                <i class="fa-solid fa-address-book" style="color: rgb(255, 255, 255);"></i>
+                <div><a href="contact.html">Contact Me</a></div>
             </div>
         </div>
+    </div>
 
-        <div class="menu" id="menu"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></div>
+    <div class="overlay" id="overlay"></div>
 
-        <section class="current-page">
-            <div>About</div>
-        </section>
+    <div class="all" id="main-page-content">
+        <header>
+            <div class="menu"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></div>
 
-        <section class="socials-wrapper" id="socials">
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-        </section>
-    </header>
-
-    <main>
-        <div class="page-content">
-            <section class="about-content">
-                <div class="overlay"></div>
-
-                <div class="about-text">
-                    <h1>About Me</h1>
-
-                    <span><q>I enjoy solving problems through code and bringing ideas to life on the web.</q></span>
-
-                    <span><q>Whether it's crafting smooth user interfaces or structuring scalable systems, I'm always looking for ways to improve and push my skills further.</q></span>
-
-                    <span><q>My journey into tech is driven by curiosity and a desire to create solutions that make everyday experiences smoother and more meaningful.</q></span>
-
-                    <span><q>Beyond coding, I enjoy thinking through problems, refining ideas, and turning concepts into real, working solutions.</q></span>
-                </div>
+            <section class="current-page">
+                <div>About</div>
             </section>
 
-            <section class="skill-cards">
-                <div class="container">
-                    <div style="background-color: #dbe9ff;"><i class="fa-solid fa-code" style="color: #4d7bc9;"></i></div>
+            <div class="desktop-avatar-container"></div>
 
-                    <span class="skill-title">Frontend Development</span>
-
-                    <span class="skill-text">
-                        I create responsive, accessible, and performance-driven interfaces using modern web technologies to deliver clean and intuitive user experiences.
-                    </span>
-                </div>
-
-                <div class="container">
-                    <div style="background-color: #dff3ff;"><i class="fa-solid fa-chart-simple" style="color: #2f8fbd;"></i></div>
-
-                    <span class="skill-title">Data Analysis</span>
-
-                    <span class="skill-text">
-                        I work with datasets to identify patterns, trends, and opportunities that support informed decision-making and better outcomes.
-                    </span>
-                </div>
-
-                <div class="container">
-                    <div style="background-color: #e6e6ff;"><i class="fa-solid fa-robot" style="color: #5a6fe0;"></i></div>
-
-                    <span class="skill-title">AI Automation</span>
-
-                    <span class="skill-text">
-                        I design and integrate AI-driven solutions that automate workflows, analyze data, and enhance productivity.
-                    </span>
-                </div>
+            <section class="desktop-navigations">
+                <a href="../index.html">Home</a>
+                <a style="color: #4d7bc9;">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </section>
-        </div>
-    </main>
 
-    <footer>
-        <div>
-            <span><b>&copy; 2026 Promise Chibuchi.</b></span>
+            <section class="socials-wrapper" id="socials">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </section>
+        </header>
 
-            <span>All rights Reserved.</span>
-        </div>
-    </footer>
+        <main>
+            <div class="page-content" id="page-content">
+                <section class="about-content">
+                    <div class="overlay-bg"></div>
+
+                    <div class="about-text">
+                        <h1>About Me</h1>
+
+                        <span><q>I enjoy solving problems through code and bringing ideas to life on the web.</q></span>
+
+                        <span><q>Whether it's crafting smooth user interfaces or structuring scalable systems, I'm always looking for ways to improve and push my skills further.</q></span>
+
+                        <span><q>My journey into tech is driven by curiosity and a desire to create solutions that make everyday experiences smoother and more meaningful.</q></span>
+
+                        <span><q>Beyond coding, I enjoy thinking through problems, refining ideas, and turning concepts into real, working solutions.</q></span>
+                    </div>
+                </section>
+
+                <section class="skill-cards">
+                    <div class="container">
+                        <div style="background-color: #dbe9ff;"><i class="fa-solid fa-code" style="color: #4d7bc9;"></i></div>
+
+                        <span class="skill-title">Frontend Development</span>
+
+                        <span class="skill-text">
+                            I create responsive, accessible, and performance-driven interfaces using modern web technologies to deliver clean and intuitive user experiences.
+                        </span>
+                    </div>
+
+                    <div class="container">
+                        <div style="background-color: #dff3ff;"><i class="fa-solid fa-chart-simple" style="color: #2f8fbd;"></i></div>
+
+                        <span class="skill-title">Data Analysis</span>
+
+                        <span class="skill-text">
+                            I work with datasets to identify patterns, trends, and opportunities that support informed decision-making and better outcomes.
+                        </span>
+                    </div>
+
+                    <div class="container">
+                        <div style="background-color: #e6e6ff;"><i class="fa-solid fa-robot" style="color: #5a6fe0;"></i></div>
+
+                        <span class="skill-title">AI Automation</span>
+
+                        <span class="skill-text">
+                            I design and integrate AI-driven solutions that automate workflows, analyze data, and enhance productivity.
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <span>This portfolio represents my journey as a software engineering student, showcasing my skills, projects, and continuous growth in web development and technology</span>
+
+                <span>
+                    I am passionate about building clean, efficient, and user-focused digital experiences, with a strong attention to detail and modern design principles. 
+                    Thank you for taking the time to explore my work.
+                </span>
+
+                <span class="rights">All rights Reserved.</span>
+                <span><b>&copy; 2026 Promise Chibuchi.</b></span>
+            </div>
+        </footer>
+    </div>
 </body>
 
 <script>
-    const toggleElement = document.getElementById("menu");
+    const toggleElement = document.getElementById("main-page-content").firstElementChild.firstElementChild;
 
     const sideBar = document.getElementById("side-bar-holder");
+
+    const overlay = document.getElementById("overlay");
 
     toggleElement.addEventListener("click", () => {
         sideBar.classList.toggle("active");
 
-        toggleElement.classList.toggle("active");
+        overlay.classList.toggle("active");
     });
 
-   var startX = 0
+    var startX = 0;
 
-    var endX = 0
+    var endX = 0;
 
     function swipe(diff) {
         if (diff > 50) {
             sideBar.classList.remove("active");
 
-            toggleElement.classList.remove("active");
+            overlay.classList.remove("active");
         }
     };
 
