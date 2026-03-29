@@ -74,7 +74,6 @@ main {
 
 .cta input {
     font-size: 0.7rem;
-    border-width: 1.6px;
     border-style: solid;
     border-color: white;
     outline: none;
@@ -362,6 +361,7 @@ footer div span {
     }
 
     .cta input {
+        border-width: 1.6px;
         width: 57%;
         padding: 0.4rem;
         padding-left: 10px;
@@ -497,6 +497,7 @@ footer div span {
     }
 
     .cta input {
+        border-width: 2px;
         width: 50%;
         padding: 0.6rem;
         padding-left: 20px;
@@ -629,6 +630,7 @@ footer div span {
     }
 
     .cta input {
+        border-width: 2px;
         width: 50%;
         padding: 0.6rem;
         padding-left: 20px;
