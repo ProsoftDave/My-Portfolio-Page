@@ -358,8 +358,8 @@ footer div span {
     }
 
     footer {
-        padding: 2rem;
         margin-top: 40%;
+        padding: 2rem;
     }
 
     footer div span {
@@ -431,6 +431,12 @@ footer div span {
         cursor: pointer;
     }
 
+    .page-content {
+        height: auto;
+        display: grid;
+        place-items: center;
+    }
+
     .about-content {
         background-image: url("https://res.cloudinary.com/duarq8azw/image/upload/v1773905596/ChatGPT_Image_Mar_19_2026_08_32_29_AM_ydtsr9.png");
         padding-top: 10rem;
@@ -453,7 +459,7 @@ footer div span {
     .skill-cards {
         flex-direction: row;
         justify-content: center;
-        transform: translateY(-32%);
+        transform: translateY(-70%);
     }
 
     .skill-cards .container {
@@ -486,7 +492,6 @@ footer div span {
     }
 
     footer {
-        margin-top: 22%;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
@@ -528,7 +533,7 @@ footer div span {
         align-items: center;
         gap: 4rem;
     }
-
+ 
     .desktop-navigations a {
         text-decoration: none;
         color: white;
@@ -614,7 +619,7 @@ footer div span {
     }
 
     footer {
-        margin-top: 10%;
+        margin-top: 50%;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }

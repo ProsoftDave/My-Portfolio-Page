@@ -357,6 +357,10 @@ footer div span {
         padding: 2px;
     }
 
+    .submit.active {
+        cursor: progress;
+    }
+
     footer {
         padding: 2rem;
     }

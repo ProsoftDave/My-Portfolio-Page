@@ -119,6 +119,12 @@
         overlay.classList.toggle("active");
     });
 
+    overlay.addEventListener("click", () => {
+        sideBar.classList.remove("active");
+
+        overlay.classList.remove("active");
+    });
+
     var startX = 0;
 
     var endX = 0;
